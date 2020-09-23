@@ -13,9 +13,56 @@
 }
 
 body {
+  font-family: sans-serif;
   min-height: 100vh;
   display: grid;
   place-items: center;
   background: var(--clr-dark);
   color: var(--clr-light);
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.game {
+  position: relative;
+  width: 12.5em;
+}
+
+.streamers {
+    display: flex;
+  }
+
+.streamers > img {
+      width: 2em;
+      height: 2em;
+      border-radius: 50%;
+    }
+
+.front > .stats{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /*border: 1px solid red;*/
+  }
+
+.front > .name{
+  margin: .75em 0;
+  }
+
+.font > .streamers img {
+  border: 1px solid var(--clr-dark);
+}
+
+
+.back {
+  display: none;
 }
